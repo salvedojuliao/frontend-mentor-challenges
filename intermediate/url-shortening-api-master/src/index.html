@@ -24,10 +24,10 @@
   
   <title>Frontend Mentor | Shortly URL shortening API Challenge</title>
 </head>
-<body class="font-poppins bg-white md:bg-black lg:bg-gray-100 xl:bg-green-100 2xl:bg-yellow-500">
+<body class="font-poppins bg-white md:bg-gray-300 lg:bg-gray-100 xl:bg-green-100 2xl:bg-yellow-500">
 
   <!--Header-->
-    <header class="flex-col justify-between items-center lg:pl-10 lg:pr-10">
+    <header class="flex-col justify-between items-center md:pl-10 md:pr-10 2xl:pl-36 2xl:pr-36">
         
         <div class="flex px-4 h-20 justify-between items-center">
             
@@ -66,17 +66,17 @@
 
  
 <!-- Hero section -->
-  <section class="mb-32 lg:mt-8">
-    <div class="lg:flex lg:flex-row-reverse lg:items-center lg:pl-14 lg:pr-14">
-      <div class="mb-8 px-4 lg:w-2/4"> 
+  <section class="mb-32 md:mt-8 md:flex md:justify-center 2xl:pl-36 2xl:pr-36">
+    <div class="lg:flex lg:flex-row-reverse lg:items-center lg:pl-14 lg:pr-14 2xl:pl-4 2xl:pr-4">
+      <div class="mb-8 px-4 md:w-3/6 md:mx-auto lg:w-2/4 2xl:w-3/6"> 
         <img src="assets/images/illustration-working.svg" alt="illustration-working">
       </div>
-      <div class="text-center px-2 lg:w-2/4 lg:text-left">
-        <h1 class="font-bold text-4xl text-p_very_dark_blue mb-2 lg:text-5xl">More than just shorter links</h1>
+      <div class="text-center px-2 md:w-3/4 md:mx-auto lg:w-2/4 lg:text-left">
+        <h1 class="font-bold text-4xl text-p_very_dark_blue mb-2 lg:text-5xl 2xl:text-6xl">More than just shorter links</h1>
         <div class="lg:w-5/6">
-          <p class="text-p_grayish_violet text-base mb-8">Build your brand’s recognition and get detailed insights 
+          <p class="text-p_grayish_violet text-base mb-8 md:mb-2">Build your brand’s recognition and get detailed insights 
           on how your links are performing.</p>
-          <button class="bg-p_cyan text-white font-bold py-3 px-10 rounded-3xl">Get Started</button>
+          <button class="bg-p_cyan text-white font-bold py-3 px-10 rounded-3xl 2xl:mt-4">Get Started</button>
         </div>
       </div>
     </div>
@@ -87,57 +87,59 @@
 
 <!-- Link shorten section -->
   <section class="bg-gray-200 flex flex-col justify-center items-center px-4 pb-24">
-
-  
-    <div class="-translate-y-1/2 w-full bg-p_dark_violet rounded-2xl">  <!-- Dica: utilizar transform: translate() -->
-      <div class="back px-6 h-36 flex flex-col justify-center space-y-6 rounded-2xl">
-        <input type="text" class="p-2 placeholder:text-md" placeholder="Shorten a link here...">
+    <div class="-translate-y-1/2 w-full bg-p_dark_violet rounded-2xl md:w-8/12 lg:w-10/12 lg:space-x-4 2xl:w-9/12">  <!-- Dica: utilizar transform: translate() -->
+      <div class="back px-6 h-36 flex flex-col justify-center space-y-6 rounded-2xl lg:h-28 lg:flex-row lg:items-center lg:space-y-0 lg:space-x-4">
+        <input type="text" class="p-2 lg:w-8/12 rounded-md placeholder:text-md" placeholder="Shorten a link here...">
         <button class="bg-p_cyan text-white font-bold py-2 px-16 rounded-lg">Shorten it!</button>
       </div>
     </div>
 
-    <div class="mx-auto">
-      <h2 class="text-2xl font-bold text-center mb-4 text-p_very_dark_violet">Advanced Statistics</h2>
-      <p class="text-p_grayish_violet text-base text-center">Track how your links are performing across the web with our 
+    <div class="mx-auto lg:mt-10">
+      <h2 class="text-2xl font-bold text-center mb-4 text-p_very_dark_violet lg:text-3xl">Advanced Statistics</h2>
+      <p class="text-p_grayish_violet text-base text-center lg:text-lg">Track how your links are performing across the web with our 
         advanced statistics dashboard.</p>
     </div>
    
 
-    <div class="mt-20 px-6 bg-white rounded-sm pb-12">
-      <div class="bg-p_dark_violet w-24 p-6 rounded-full mx-auto relative top-[-2.5rem] ">
-        <img src="assets/images/icon-brand-recognition.svg" class="w-full" alt="">
-      </div>
-      <div>
-        <h3 class="font-bold text-center mb-4 text-p_very_dark_violet text-xl">Brand Recognition</h3>
-        <p class="text-p_grayish_violet text-base text-center">Boost your brand recognition with each click. Generic links don’t 
-          mean a thing. Branded links help instil confidence in your content.</p>
-      </div>
-    </div>
-    <div class="h-24 w-2 bg-p_cyan"></div>
+    <div class="flex flex-col justify-center items-center lg:flex-row lg:w-10/12 lg:mt-24">
 
-    <div class="px-6 bg-white rounded-sm pb-12">
-      <div class="bg-p_dark_violet w-24 p-6 rounded-full mx-auto relative top-[-2.5rem] ">
-        <img src="assets/images/icon-detailed-records.svg" class="w-full" alt="">
+      <div class="mt-20 px-6 bg-white rounded-sm pb-12 md:w-8/12 lg:mt-0 lg:w-4/6">
+        <div class="bg-p_dark_violet w-24 p-6 rounded-full mx-auto relative top-[-2.5rem]">
+          <img src="assets/images/icon-brand-recognition.svg" class="w-full" alt="">
+        </div>
+        <div>
+          <h3 class="font-bold text-center mb-4 text-p_very_dark_violet text-xl">Brand Recognition</h3>
+          <p class="text-p_grayish_violet text-base text-center">Boost your brand recognition with each click. Generic links don’t 
+            mean a thing. Branded links help instil confidence in your content.</p>
+        </div>
       </div>
-      <div>
-        <h3 class="font-bold text-center mb-4 text-p_very_dark_violet text-xl">Detailed Records</h3>
-        <p class="text-p_grayish_violet text-base text-center"> Gain insights into who is clicking your links. Knowing when and where 
-          people engage with your content helps inform better decisions.</p>
-      </div>
-    </div>
 
-    <div class="h-24 w-2 bg-p_cyan"></div>
+      <div class="h-24 w-2 lg:h-3 lg:w-32 bg-p_cyan"></div>
+  
+      <div class="px-6 bg-white rounded-sm pb-12 md:w-8/12 lg:w-4/6">
+        <div class="bg-p_dark_violet w-24 p-6 rounded-full mx-auto relative top-[-2.5rem]">
+          <img src="assets/images/icon-detailed-records.svg" class="w-full" alt="">
+        </div>
+        <div>
+          <h3 class="font-bold text-center mb-4 text-p_very_dark_violet text-xl">Detailed Records</h3>
+          <p class="text-p_grayish_violet text-base text-center"> Gain insights into who is clicking your links. Knowing when and where 
+            people engage with your content helps inform better decisions.</p>
+        </div>
+      </div>
+  
+      <div class="h-24 w-2 lg:h-3 lg:w-32 bg-p_cyan"></div>
+  
+      <div class="px-6 bg-white rounded-sm pb-12 md:w-8/12">
+        <div class="bg-p_dark_violet w-24 p-6 rounded-full mx-auto relative top-[-2.5rem]">
+          <img src="assets/images/icon-detailed-records.svg" class="w-full" alt="">
+        </div>
+        <div>
+          <h3 class="font-bold text-center mb-4 text-p_very_dark_violet text-xl">Fully Customizable</h3>
+          <p class="text-p_grayish_violet text-base text-center"> Improve brand awareness and content discoverability through customizable 
+            links, supercharging audience engagement..</p>
+        </div>
+      </div>
 
-    <div class="px-6 bg-white rounded-sm pb-12">
-      <div class="bg-p_dark_violet w-24 p-6 rounded-full mx-auto relative top-[-2.5rem] ">
-        <img src="assets/images/icon-fully-customizable.svg" class="w-full" alt="">
-      </div>
-      <div>
-        <h3 class="font-bold text-center mb-4 text-p_very_dark_violet text-xl">Fully Customizable</h3>
-        <p class="text-p_grayish_violet text-base text-center">Improve brand awareness and content discoverability through customizable 
-          links, supercharging audience engagement.
-        </p>
-      </div>
     </div>
 
   </section>
