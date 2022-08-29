@@ -17,6 +17,11 @@ module.exports = {
         p_very_dark_blue: 'hsl(255, 11%, 22%)',
         p_very_dark_violet: 'hsl(260, 8%, 14%)',
 
+      },
+
+      backgroundImage: {
+        'bg-desk': "url(src/assets/images/bg-boost-desktop.svg)",
+        'bg-mobile': "url(src/assets/images/bg-boost-mobile.svg)",
       }
     },
 

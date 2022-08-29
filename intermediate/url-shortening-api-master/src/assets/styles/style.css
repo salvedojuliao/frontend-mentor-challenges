@@ -1,6 +1,7 @@
-.back{
+.back_mb{
     background-image: url('../images/bg-boost-mobile.svg');
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
+}
+
+.back_desk{
+    background-image: url('../images/bg-boost-desktop.svg');
 }
