@@ -1045,6 +1045,10 @@ video {
     margin-top: 0px;
   }
 
+  .lg\:mb-24 {
+    margin-bottom: 6rem;
+  }
+
   .lg\:flex {
     display: flex;
   }
@@ -1133,6 +1137,30 @@ video {
     margin-left: calc(2.5rem * calc(1 - var(--tw-space-x-reverse)));
   }
 
+  .lg\:space-x-60 > :not([hidden]) ~ :not([hidden]) {
+    --tw-space-x-reverse: 0;
+    margin-right: calc(15rem * var(--tw-space-x-reverse));
+    margin-left: calc(15rem * calc(1 - var(--tw-space-x-reverse)));
+  }
+
+  .lg\:space-x-36 > :not([hidden]) ~ :not([hidden]) {
+    --tw-space-x-reverse: 0;
+    margin-right: calc(9rem * var(--tw-space-x-reverse));
+    margin-left: calc(9rem * calc(1 - var(--tw-space-x-reverse)));
+  }
+
+  .lg\:space-x-24 > :not([hidden]) ~ :not([hidden]) {
+    --tw-space-x-reverse: 0;
+    margin-right: calc(6rem * var(--tw-space-x-reverse));
+    margin-left: calc(6rem * calc(1 - var(--tw-space-x-reverse)));
+  }
+
+  .lg\:space-x-16 > :not([hidden]) ~ :not([hidden]) {
+    --tw-space-x-reverse: 0;
+    margin-right: calc(4rem * var(--tw-space-x-reverse));
+    margin-left: calc(4rem * calc(1 - var(--tw-space-x-reverse)));
+  }
+
   .lg\:bg-gray-100 {
     --tw-bg-opacity: 1;
     background-color: rgb(243 244 246 / var(--tw-bg-opacity));
@@ -1146,6 +1174,16 @@ video {
   .lg\:px-20 {
     padding-left: 5rem;
     padding-right: 5rem;
+  }
+
+  .lg\:px-32 {
+    padding-left: 8rem;
+    padding-right: 8rem;
+  }
+
+  .lg\:py-24 {
+    padding-top: 6rem;
+    padding-bottom: 6rem;
   }
 
   .lg\:pl-14 {
