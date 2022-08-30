@@ -1,7 +1,33 @@
-.back_mb{
+/* .back_mb{
     background-image: url('../images/bg-boost-mobile.svg');
 }
 
 .back_desk{
     background-image: url('../images/bg-boost-desktop.svg');
+} */
+
+
+/*Header Element*/
+@media (min-width: 780px){
+    .nav-menu{
+        display: flex;
+    }
 }
+
+/*JS*/
+#nav-mobile{
+    transition: .06s;
+    top: 80px;
+    height: 0px;
+    visibility: hidden;
+    overflow: hidden;
+}
+
+
+#nav-mobile.active {
+    visibility: visible;
+    z-index: 1000;
+    height: calc(40vh - 70px);
+    overflow-y: 0;
+}
+
