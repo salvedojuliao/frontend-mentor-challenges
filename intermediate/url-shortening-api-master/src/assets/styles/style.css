@@ -1,18 +1,11 @@
-/* .back_mb{
+/*Boost section - Background*/
+.background-img{
     background-image: url('../images/bg-boost-mobile.svg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
 }
 
-.back_desk{
-    background-image: url('../images/bg-boost-desktop.svg');
-} */
-
-
-/*Header Element*/
-@media (min-width: 780px){
-    .nav-menu{
-        display: flex;
-    }
-}
 
 /*JS*/
 .js_bar{
@@ -53,16 +46,35 @@
     transform: translateY(-8px) rotate(-135deg);
  }
 
+.mini-menu{
+    display: none;
+}
 
-/*Active Menu*/
-@media (min-width: 780px){
+ /*Tablet and Desktop dimensions*/
+ @media (min-width: 780px){
+    /*Header Element*/
     .nav-menu{
         display: flex;
     }
 
-    #nav-mobile.active {
-      display: none;
+    .button_hamburguer{
+        display: none;
     }
+
+    /*Active Menu*/
+    #nav-mobile.active {
+        display: none;
+    }
+
+    .background-img{
+        background-image: url('../images/bg-boost-desktop.svg');
+    }
+
+    .mini-menu{
+        display: flex;
+    }
+    
+
 }
 
 

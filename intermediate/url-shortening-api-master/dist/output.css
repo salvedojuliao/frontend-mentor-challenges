@@ -581,11 +581,6 @@ video {
   margin-right: auto;
 }
 
-.my-1 {
-  margin-top: 0.25rem;
-  margin-bottom: 0.25rem;
-}
-
 .mx-6 {
   margin-left: 1.5rem;
   margin-right: 1.5rem;
@@ -593,6 +588,10 @@ video {
 
 .mt-2 {
   margin-top: 0.5rem;
+}
+
+.mb-48 {
+  margin-bottom: 12rem;
 }
 
 .mb-32 {
@@ -635,14 +634,6 @@ video {
   margin-top: 2rem;
 }
 
-.mb-48 {
-  margin-bottom: 12rem;
-}
-
-.block {
-  display: block;
-}
-
 .flex {
   display: flex;
 }
@@ -661,10 +652,6 @@ video {
 
 .h-0 {
   height: 0px;
-}
-
-.h-1 {
-  height: 0.25rem;
 }
 
 .h-36 {
@@ -687,10 +674,6 @@ video {
   width: 83.333333%;
 }
 
-.w-6 {
-  width: 1.5rem;
-}
-
 .w-24 {
   width: 6rem;
 }
@@ -701,6 +684,14 @@ video {
 
 .w-11\/12 {
   width: 91.666667%;
+}
+
+.w-48 {
+  width: 12rem;
+}
+
+.w-64 {
+  width: 16rem;
 }
 
 .-translate-y-1\/2 {
@@ -817,11 +808,6 @@ video {
   background-color: hsl(180 66% 49% / var(--tw-bg-opacity));
 }
 
-.bg-slate-400 {
-  --tw-bg-opacity: 1;
-  background-color: rgb(148 163 184 / var(--tw-bg-opacity));
-}
-
 .bg-gray-200 {
   --tw-bg-opacity: 1;
   background-color: rgb(229 231 235 / var(--tw-bg-opacity));
@@ -835,23 +821,6 @@ video {
 .bg-p_very_dark_violet {
   --tw-bg-opacity: 1;
   background-color: hsl(260 8% 14% / var(--tw-bg-opacity));
-}
-
-.bg-slate-500 {
-  --tw-bg-opacity: 1;
-  background-color: rgb(100 116 139 / var(--tw-bg-opacity));
-}
-
-.bg-cover {
-  background-size: cover;
-}
-
-.bg-center {
-  background-position: center;
-}
-
-.bg-no-repeat {
-  background-repeat: no-repeat;
 }
 
 .p-2 {
@@ -920,12 +889,16 @@ video {
   padding-top: 1.25rem;
 }
 
-.pb-4 {
-  padding-bottom: 1rem;
+.pb-20 {
+  padding-bottom: 5rem;
 }
 
 .pt-4 {
   padding-top: 1rem;
+}
+
+.pb-4 {
+  padding-bottom: 1rem;
 }
 
 .pb-24 {
@@ -938,14 +911,6 @@ video {
 
 .pb-28 {
   padding-bottom: 7rem;
-}
-
-.pb-8 {
-  padding-bottom: 2rem;
-}
-
-.pb-20 {
-  padding-bottom: 5rem;
 }
 
 .text-center {
@@ -1055,16 +1020,6 @@ video {
   .md\:text-3xl {
     font-size: 1.875rem;
     line-height: 2.25rem;
-  }
-}
-
-@media (min-width: 780px) {
-  .hd\:flex {
-    display: flex;
-  }
-
-  .hd\:hidden {
-    display: none;
   }
 }
 
