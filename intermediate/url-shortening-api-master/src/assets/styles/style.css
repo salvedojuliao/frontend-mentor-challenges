@@ -15,8 +15,17 @@
 }
 
 /*JS*/
+.js_bar{
+    width: 24px;
+    height: 4px;
+    margin: 4px auto;
+    display: block;
+    background-color: #94a3b8;
+    transition: all 0.3s ease-in-out;
+}
+
 #nav-mobile{
-    transition: .06s;
+    transition: 0.3s;
     top: 80px;
     height: 0px;
     visibility: hidden;
@@ -27,7 +36,33 @@
 #nav-mobile.active {
     visibility: visible;
     z-index: 1000;
-    height: calc(40vh - 70px);
+    height: 300px;
     overflow-y: 0;
 }
+
+/*Effect js_bar*/
+.js_bar.active:nth-child(2){
+   opacity: 0;
+}
+
+.js_bar.active:nth-child(1){
+    transform: translateY(8px) rotate(135deg);
+ }
+
+ .js_bar.active:nth-child(3){
+    transform: translateY(-8px) rotate(-135deg);
+ }
+
+
+/*Active Menu*/
+@media (min-width: 780px){
+    .nav-menu{
+        display: flex;
+    }
+
+    #nav-mobile.active {
+      display: none;
+    }
+}
+
 

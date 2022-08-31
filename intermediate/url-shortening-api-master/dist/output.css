@@ -563,10 +563,6 @@ video {
   position: relative;
 }
 
-.top-20 {
-  top: 5rem;
-}
-
 .left-0 {
   left: 0px;
 }
@@ -637,6 +633,10 @@ video {
 
 .mt-8 {
   margin-top: 2rem;
+}
+
+.mb-48 {
+  margin-bottom: 12rem;
 }
 
 .block {
@@ -837,6 +837,11 @@ video {
   background-color: hsl(260 8% 14% / var(--tw-bg-opacity));
 }
 
+.bg-slate-500 {
+  --tw-bg-opacity: 1;
+  background-color: rgb(100 116 139 / var(--tw-bg-opacity));
+}
+
 .bg-cover {
   background-size: cover;
 }
@@ -933,6 +938,14 @@ video {
 
 .pb-28 {
   padding-bottom: 7rem;
+}
+
+.pb-8 {
+  padding-bottom: 2rem;
+}
+
+.pb-20 {
+  padding-bottom: 5rem;
 }
 
 .text-center {
