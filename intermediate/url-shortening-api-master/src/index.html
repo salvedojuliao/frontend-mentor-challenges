@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
-  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="assets/images/favicon-32x32.png">
   <link rel="stylesheet" href="../dist/output.css">
   <link rel="stylesheet" href="assets/styles/style.css">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -101,7 +101,7 @@
 
 
 <!-- Link shorten section -->
-  <section class="bg-gray-200 flex flex-col justify-center items-center px-4 pb-24 lg:pb-48">
+  <section class="section-shorten-link bg-gray-200 flex flex-col justify-center items-center px-4 pb-24 lg:pb-48">
     <div class="-translate-y-1/2 w-full bg-p_dark_violet rounded-2xl md:w-8/12 lg:py-4 lg:w-10/12 lg:space-x-4 2xl:w-9/12 background-img">  <!-- Dica: utilizar transform: translate() -->
       <div class="back px-6 h-36 flex flex-col justify-center space-y-6 rounded-2xl lg:h-28 lg:flex-row lg:items-center lg:space-y-0 lg:space-x-4">
         <input type="text" id="input-url" class="p-2 lg:w-8/12 rounded-md placeholder:text-md" placeholder="Shorten a link here...">
@@ -110,20 +110,31 @@
     </div>
 
      <!--JS shorten field -->
-     <div class="w-full">
-      <div class="w-full md:w-8/12 mx-auto space-y-1 lg:flex lg:space-y-0 lg:w-10/12 lg:h-16 lg:items-center lg:-translate-y-10 2xl:w-9/12">
-        <div class="bg-white py-2 w-full flex justify-start items-center px-4 rounded-lg text-base lg:rounded-r-lg lg:w-6/12 lg:h-full">
-          <p>https://www.frontendmentor.io</p>
-        </div>
-        <div class="bg-white flex flex-col justify-center h-24 space-y-2 lg:flex-row lg:rounded-lg lg:w-6/12 lg:h-full lg:items-center">
-          <div class="w-full flex justify-start items-center px-4 text-p_cyan text-base lg:justify-end">
-            <p>https://www.rei.link</p>
+    <!-- <div class="w-full md:w-8/12 lg:w-10/12 2xl:w-9/12 lg:bg-white lg:rounded-md">
+        <div class="flex flex-col space-y-1 bg lg:flex-row lg:items-center lg:space-y-0 lg:h-20 lg:justify-between">
+          <div class="bg-white py-3 px-4 rounded-md lg:rounded-r-none lg:h-full lg:flex lg:items-center">
+            <p class="truncate link-Inserted">aaa</p>
           </div>
-          <div class="flex justify-center items-center lg:pb-2">
-              <button class="bg-p_cyan text-white font-bold py-2 w-full mx-4 rounded-md lg:w-36">Copy</button>
+          <div class="bg-white py-3 px-4 rounded-md lg:rounded-l-none flex flex-col space-y-2 lg:flex-row lg:items-center lg:h-full lg:space-x-4">
+            <p class="text-p_cyan show-Link">aaaa</p>
+            <button class="bg-p_cyan text-white font-bold py-2 w-full rounded-md hover:bg-p_dark_violet lg:px-8">Copy</button>
           </div>
         </div>
-      </div>
+    </div>  -->
+
+    <div class="js-section-divs space-y-8 mb-10">
+        <!-- <div class="shorten-links-container"> 
+          <div class="bg-links">
+            <div class="div-p-links">
+              <p class="link-inserted"></p>
+            </div>
+            <div class="div-links-copy">
+              <p class="show-link"></p>
+              <button class="btn-copy">Copy</button>
+            </div>
+          </div>
+        </div>  -->
+  </div>
     <!--JS shorten field -->
 
 
