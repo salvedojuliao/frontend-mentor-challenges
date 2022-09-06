@@ -3,66 +3,189 @@ const apiBase = "https://api.shrtco.de/v2/shorten?url=";
 
 btnShortenIt.addEventListener("click", ()=>{
         const inputUrl = document.querySelector("#input-url").value;
+        let inputURLSytle = document.querySelector("#input-url");
+        // let classStatus = false;
         if (inputUrl == ""){
             alert("Adicione um link")
+            inputURLSytle.classList.add("inputURLSytle");
+            classStatus = true;
             return;
         }else{
             const sendUrl = "https://api.shrtco.de/v2/shorten?url=" + inputUrl;
             fetch(sendUrl)
                 .then((response) => response.json())
                 .then(data => {
+                    if(!data.ok){
+                        alert("Verique se você adicionou o link corretamente.")
+                        return;
+                    }else{
+                        const sendUrl = "https://api.shrtco.de/v2/shorten?url=" + inputUrl;
+                        fetch(sendUrl)
+                            .then((response) => response.json())
+                            .then(data => {
 
-                    let shortedLink = data.result.full_short_link;
-                    let showLink = document.createElement("input");
-                    showLink.classList.add("show-link");
-                    showLink.value = shortedLink;
-                    
-                    let linkInserted = document.createElement("p");
-                    linkInserted.classList.add("link-inserted");
-                    linkInserted.innerText = inputUrl;
+                            let shortedLink = data.result.full_short_link;
+                            let showLink = document.createElement("input");
+                            showLink.classList.add("show-link");
+                            showLink.value = shortedLink;
+                            
+                            let linkInserted = document.createElement("p");
+                            linkInserted.classList.add("link-inserted");
+                            linkInserted.innerText = inputUrl;
 
-                    // Creating divs to link
-                    let jsSectionDivs = document.querySelector(".js-section-divs");
-                    let shorteLlinksContainer = document.createElement("div");
-                    shorteLlinksContainer.classList.add("shorten-links-container");
-                    jsSectionDivs.appendChild(shorteLlinksContainer)
-                    
-                    let bgLinks = document.createElement("div");
-                    bgLinks.classList.add("bg-links");
-                    shorteLlinksContainer.appendChild(bgLinks);
-            
-                    let divPLinks = document.createElement("div");
-                    divPLinks.classList.add("div-p-links");
-                    bgLinks.appendChild(divPLinks);
-                    divPLinks.appendChild(linkInserted);
-
-                    let divLinksCopy = document.createElement("div");
-                    divLinksCopy.classList.add("div-links-copy");
-                    bgLinks.appendChild(divLinksCopy);
-                    divLinksCopy.appendChild(showLink);
-
-                    let btnCopy = document.createElement("button");
-                    btnCopy.classList.add("btn-copy");
-                    btnCopy.innerText = "Copy";
-                    divLinksCopy.appendChild(btnCopy);
-
-                    btnCopy.addEventListener("click", () => {
-                        console.log(showLink.innerText);
-                        showLink.select();
-                        showLink.setSelectionRange(0, 99999);
-                        document.execCommand("copy");
-                        btnCopy.innerText = "Copied!";
-                        btnCopy.style.backgroundColor = "hsl(257, 27%, 26%)";
+                            // Creating divs to link
+                            let jsSectionDivs = document.querySelector(".js-section-divs");
+                            let shorteLlinksContainer = document.createElement("div");
+                            shorteLlinksContainer.classList.add("shorten-links-container");
+                            jsSectionDivs.appendChild(shorteLlinksContainer)
+                                
+                            let bgLinks = document.createElement("div");
+                            bgLinks.classList.add("bg-links");
+                            shorteLlinksContainer.appendChild(bgLinks);
                         
-                     })
-                        
-                        
+                            let divPLinks = document.createElement("div");
+                            divPLinks.classList.add("div-p-links");
+                            bgLinks.appendChild(divPLinks);
+                            divPLinks.appendChild(linkInserted);
+
+                            let divLinksCopy = document.createElement("div");
+                            divLinksCopy.classList.add("div-links-copy");
+                            bgLinks.appendChild(divLinksCopy);
+                            divLinksCopy.appendChild(showLink);
+
+                            let btnCopy = document.createElement("button");
+                            btnCopy.classList.add("btn-copy");
+                            btnCopy.innerText = "Copy";
+                            divLinksCopy.appendChild(btnCopy);
+
+                            btnCopy.addEventListener("click", () => {
+                                let btnsCopies = document.querySelectorAll(".btnCopyClicked")
+                                btnsCopies.forEach(btn =>{
+                                    btn.classList.remove("btnCopyClicked");
+                                    btn.innerText = "Copy"; 
+                                })
+                                btnCopy.classList.add("btnCopyClicked")
+                                btnCopy.innerText = "Copied!"; 
+                                showLink.select();
+                                showLink.setSelectionRange(0, 99999);
+                                document.execCommand("copy");
+                                     
+                            })                
+                        })
+                    }
                 })
 
-        }
-     
-        //catch 
+            }
 })
+
+// Menu Hamburguer
+const btnMobile = document.getElementById('btn-mobile');
+const js_bar = document.querySelectorAll('.js_bar');
+
+btnMobile.addEventListener("click", ()=>{
+    const nav = document.getElementById('nav-mobile');
+    nav.classList.toggle('active')
+    js_bar.forEach(e => {
+        e.classList.toggle('active')
+    });
+})
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// {
+//     const sendUrl = "https://api.shrtco.de/v2/shorten?url=" + inputUrl;
+//     fetch(sendUrl)
+//         .then((response) => response.json())
+//         .then(data => {
+
+//             let shortedLink = data.result.full_short_link;
+//             let showLink = document.createElement("input");
+//             showLink.classList.add("show-link");
+//             showLink.value = shortedLink;
+            
+//             let linkInserted = document.createElement("p");
+//             linkInserted.classList.add("link-inserted");
+//             linkInserted.innerText = inputUrl;
+
+//             // Creating divs to link
+//             let jsSectionDivs = document.querySelector(".js-section-divs");
+//             let shorteLlinksContainer = document.createElement("div");
+//             shorteLlinksContainer.classList.add("shorten-links-container");
+//             jsSectionDivs.appendChild(shorteLlinksContainer)
+            
+//             let bgLinks = document.createElement("div");
+//             bgLinks.classList.add("bg-links");
+//             shorteLlinksContainer.appendChild(bgLinks);
+    
+//             let divPLinks = document.createElement("div");
+//             divPLinks.classList.add("div-p-links");
+//             bgLinks.appendChild(divPLinks);
+//             divPLinks.appendChild(linkInserted);
+
+//             let divLinksCopy = document.createElement("div");
+//             divLinksCopy.classList.add("div-links-copy");
+//             bgLinks.appendChild(divLinksCopy);
+//             divLinksCopy.appendChild(showLink);
+
+//             let btnCopy = document.createElement("button");
+//             btnCopy.classList.add("btn-copy");
+//             btnCopy.innerText = "Copy";
+//             divLinksCopy.appendChild(btnCopy);
+
+//             btnCopy.addEventListener("click", () => {
+//                 console.log(showLink.innerText);
+//                 showLink.select();
+//                 showLink.setSelectionRange(0, 99999);
+//                 document.execCommand("copy");
+//                 btnCopy.innerText = "Copied!";
+//                 btnCopy.style.backgroundColor = "hsl(257, 27%, 26%)";
+                
+//              })
+                
+                
+//         })
+
+// }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 // let btns = document.querySelectorAll('.rateForm .btn');
 // btns.forEach(btn => {
@@ -143,17 +266,7 @@ btnShortenIt.addEventListener("click", ()=>{
 
 
 
-// Menu Hamburguer
-const btnMobile = document.getElementById('btn-mobile');
-const js_bar = document.querySelectorAll('.js_bar');
 
-btnMobile.addEventListener("click", ()=>{
-    const nav = document.getElementById('nav-mobile');
-    nav.classList.toggle('active')
-    js_bar.forEach(e => {
-        e.classList.toggle('active')
-    });
-})
 
 
 

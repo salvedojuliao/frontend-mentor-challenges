@@ -79,7 +79,6 @@
 
 
 /*JS Shorten Link*/
-
 .js-section-divs {
     width: 100%;
     display: flex;
@@ -141,6 +140,7 @@
 
 .btn-copy:hover{
     background-color: hsl(257, 27%, 26%);
+    transition: 0.2s;
 }
 
 
@@ -203,6 +203,31 @@
         width: 75%; /*2xl:w-9/12*/
     }
 }
+
+
+.inputURLSytle::placeholder{
+    color: red;
+}
+
+.inputURLSytle{
+    border: red solid 2px;
+}
+
+.messageError{
+    color: red;
+    font-weight: 300;
+}
+
+.btnCopyClicked{
+    background-color: hsl(257, 27%, 26%);
+}
+
+
+
+
+
+
+
 
 
 /* <div class=".shorten-links-container w-full md:w-8/12 lg:w-10/12 2xl:w-9/12 lg:bg-white lg:rounded-md">
