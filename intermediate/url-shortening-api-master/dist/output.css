@@ -770,10 +770,6 @@ video {
   border-radius: 0.125rem;
 }
 
-.rounded-xl {
-  border-radius: 0.75rem;
-}
-
 .bg-p_dark_violet {
   --tw-bg-opacity: 1;
   background-color: hsl(257 27% 26% / var(--tw-bg-opacity));
@@ -807,11 +803,6 @@ video {
 .bg-black {
   --tw-bg-opacity: 1;
   background-color: rgb(0 0 0 / var(--tw-bg-opacity));
-}
-
-.bg-red-600 {
-  --tw-bg-opacity: 1;
-  background-color: rgb(220 38 38 / var(--tw-bg-opacity));
 }
 
 .p-2 {
@@ -969,26 +960,9 @@ video {
   transition-duration: 150ms;
 }
 
-.hover\:overflow-hidden:hover {
-  overflow: hidden;
-}
-
 .hover\:bg-p_dark_violet:hover {
   --tw-bg-opacity: 1;
   background-color: hsl(257 27% 26% / var(--tw-bg-opacity));
-}
-
-.hover\:bg-p_cyan:hover {
-  --tw-bg-opacity: 1;
-  background-color: hsl(180 66% 49% / var(--tw-bg-opacity));
-}
-
-.hover\:font-bold:hover {
-  font-weight: 700;
-}
-
-.hover\:font-semibold:hover {
-  font-weight: 600;
 }
 
 .hover\:text-p_cyan:hover {
@@ -999,11 +973,6 @@ video {
 .hover\:text-white:hover {
   --tw-text-opacity: 1;
   color: rgb(255 255 255 / var(--tw-text-opacity));
-}
-
-.hover\:text-p_dark_violet:hover {
-  --tw-text-opacity: 1;
-  color: hsl(257 27% 26% / var(--tw-text-opacity));
 }
 
 @media (min-width: 640px) {
@@ -1226,6 +1195,11 @@ video {
 
   .\32xl\:w-9\/12 {
     width: 75%;
+  }
+
+  .\32xl\:px-60 {
+    padding-left: 15rem;
+    padding-right: 15rem;
   }
 
   .\32xl\:px-4 {
