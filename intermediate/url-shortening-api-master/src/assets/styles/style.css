@@ -122,6 +122,11 @@
 .show-link{
     color: hsl(180, 66%, 49%);
     margin-bottom: 12px;
+    border: none;
+}
+
+.show-link:focus{
+    outline: none;
 }
 
 .btn-copy{

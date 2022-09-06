@@ -13,9 +13,9 @@ btnShortenIt.addEventListener("click", ()=>{
                 .then(data => {
 
                     let shortedLink = data.result.full_short_link;
-                    let showLink = document.createElement("p");
+                    let showLink = document.createElement("input");
                     showLink.classList.add("show-link");
-                    showLink.innerText = shortedLink;
+                    showLink.value = shortedLink;
                     
                     let linkInserted = document.createElement("p");
                     linkInserted.classList.add("link-inserted");
@@ -45,11 +45,40 @@ btnShortenIt.addEventListener("click", ()=>{
                     btnCopy.classList.add("btn-copy");
                     btnCopy.innerText = "Copy";
                     divLinksCopy.appendChild(btnCopy);
-            }) 
+
+                    btnCopy.addEventListener("click", () => {
+                        console.log(showLink.innerText);
+                        showLink.select();
+                        showLink.setSelectionRange(0, 99999);
+                        document.execCommand("copy");
+                        btnCopy.innerText = "Copied!";
+                        btnCopy.style.backgroundColor = "hsl(257, 27%, 26%)";
+                        
+                     })
+                        
+                        
+                })
+
         }
      
         //catch 
 })
+
+// let btns = document.querySelectorAll('.rateForm .btn');
+// btns.forEach(btn => {
+//     btn.addEventListener("click", btn =>{
+//         selecionaItem(btn.target);
+//     })
+// })
+
+// function copiarTexto(){
+//     let textoCopiado = document.getElementById("texto")
+//     textoCopiado.select();
+//     textoCopiado.setSelectionRange(0, 99999);
+//     document.execCommand("copy");
+//     alert(`O texto copiado é ${textoCopiado.value}`);
+// }
+
 
 
 
