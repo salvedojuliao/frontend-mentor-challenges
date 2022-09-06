@@ -40,11 +40,13 @@
 
 .js_bar.active:nth-child(1){
     transform: translateY(8px) rotate(135deg);
+    background-color: hsl(260, 8%, 14%);
  }
 
  .js_bar.active:nth-child(3){
     transform: translateY(-8px) rotate(-135deg);
- }
+    background-color: hsl(260, 8%, 14%);
+ }  
 
 .mini-menu{
     display: none;
